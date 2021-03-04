@@ -20,9 +20,25 @@
                             <li><a href="index2.html">Dashboard style 2</a></li>
                         </ul>
                     </li>
+                    
                     <li class="dropdown">
                         <a href="javascript:;" class="dropdown-toggle">
-                            <span class="micon dw dw-edit2"></span><span class="mtext">Forms</span>
+                            <span class="icon-copy fa fa-drivers-license" aria-hidden="true"></span><span class="mtext">Patients</span>
+                                                    </a>
+                        <ul class="submenu">
+                            <li><a href="basic-table.html">Basic Tables</a></li>
+                            <li><a href="datatable.html">DataTables</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="calendar.html" class="dropdown-toggle no-arrow">
+                            <span class="micon dw dw-calendar1"></span><span class="mtext">RDVs</span>
+                        </a>
+                    </li>
+                   
+                    <li class="dropdown">
+                        <a href="javascript:;" class="dropdown-toggle">
+                            <span class="micon dw dw-edit2"></span><span class="mtext">Actes dentaires</span>
                         </a>
                         <ul class="submenu">
                             <li><a href="form-basic.html">Form Basic</a></li>
@@ -36,21 +52,30 @@
                     </li>
                     <li class="dropdown">
                         <a href="javascript:;" class="dropdown-toggle">
-                            <span class="micon dw dw-library"></span><span class="mtext">Patients</span>
+                            <span class="micon dw dw-paint-brush"></span><span class="mtext">Médicaments</span>
                         </a>
                         <ul class="submenu">
-                            <li><a href="basic-table.html">Basic Tables</a></li>
-                            <li><a href="datatable.html">DataTables</a></li>
+                            <li><a href="font-awesome.html">FontAwesome Icons</a></li>
+                            <li><a href="foundation.html">Foundation Icons</a></li>
+                            <li><a href="ionicons.html">Ionicons Icons</a></li>
+                            <li><a href="themify.html">Themify Icons</a></li>
+                            <li><a href="custom-icon.html">Custom Icons</a></li>
                         </ul>
-                    </li>
-                    <li>
-                        <a href="calendar.html" class="dropdown-toggle no-arrow">
-                            <span class="micon dw dw-calendar1"></span><span class="mtext">Calendar</span>
-                        </a>
                     </li>
                     <li class="dropdown">
                         <a href="javascript:;" class="dropdown-toggle">
-                            <span class="micon dw dw-apartment"></span><span class="mtext"> UI Elements </span>
+                            <span class="micon dw dw-analytics-21"></span><span class="mtext">Caisse</span>
+                        </a>
+                        <ul class="submenu">
+                            <li><a href="highchart.html">Highchart</a></li>
+                            <li><a href="knob-chart.html">jQuery Knob</a></li>
+                            <li><a href="jvectormap.html">jvectormap</a></li>
+                            <li><a href="apexcharts.html">Apexcharts</a></li>
+                        </ul>
+                    </li>
+                     <li class="dropdown">
+                        <a href="javascript:;" class="dropdown-toggle">
+                            <span class="micon dw dw-apartment"></span><span class="mtext">Ordonnance</span>
                         </a>
                         <ul class="submenu">
                             <li><a href="ui-buttons.html">Buttons</a></li>
@@ -71,30 +96,7 @@
                     </li>
                     <li class="dropdown">
                         <a href="javascript:;" class="dropdown-toggle">
-                            <span class="micon dw dw-paint-brush"></span><span class="mtext">Icons</span>
-                        </a>
-                        <ul class="submenu">
-                            <li><a href="font-awesome.html">FontAwesome Icons</a></li>
-                            <li><a href="foundation.html">Foundation Icons</a></li>
-                            <li><a href="ionicons.html">Ionicons Icons</a></li>
-                            <li><a href="themify.html">Themify Icons</a></li>
-                            <li><a href="custom-icon.html">Custom Icons</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="javascript:;" class="dropdown-toggle">
-                            <span class="micon dw dw-analytics-21"></span><span class="mtext">Charts</span>
-                        </a>
-                        <ul class="submenu">
-                            <li><a href="highchart.html">Highchart</a></li>
-                            <li><a href="knob-chart.html">jQuery Knob</a></li>
-                            <li><a href="jvectormap.html">jvectormap</a></li>
-                            <li><a href="apexcharts.html">Apexcharts</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="javascript:;" class="dropdown-toggle">
-                            <span class="micon dw dw-right-arrow1"></span><span class="mtext">Additional Pages</span>
+                            <span class="micon dw dw-right-arrow1"></span><span class="mtext">Matériel et produits</span>
                         </a>
                         <ul class="submenu">
                             <li><a href="video-player.html">Video Player</a></li>
@@ -178,7 +180,7 @@
                     </li>
                     <li>
                         <a href="javascript:;" class="dropdown-toggle">
-                            <span class="micon dw dw-edit-2"></span><span class="mtext">Documentation</span>
+                            <span class="micon dw dw-edit-2"></span><span class="mtext">Paramètres</span>
                         </a>
                         <ul class="submenu">
                             <li><a href="introduction.html">Introduction</a></li>
@@ -190,7 +192,7 @@
                     <li>
                         <a href="https://dropways.github.io/deskapp-free-single-page-website-template/" target="_blank" class="dropdown-toggle no-arrow">
                             <span class="micon dw dw-paper-plane1"></span>
-                            <span class="mtext">Landing Page <img src="vendors/images/coming-soon.png" alt="" width="25"></span>
+                            <span class="mtext">Déconnexion<img src="vendors/images/coming-soon.png" alt="" width="25"></span>
                         </a>
                     </li>
                 </ul>

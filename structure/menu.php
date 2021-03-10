@@ -12,25 +12,20 @@
             <div class="sidebar-menu">
                 <ul id="accordion-menu">
                     <li class="dropdown">
-                        <a href="javascript:;" class="dropdown-toggle">
+                        <a href="index.php" class="dropdown-toggle">
                             <span class="micon dw dw-house-1"></span><span class="mtext">Acceuil</span>
                         </a>
-                        <ul class="submenu">
-                            <li><a href="index.html">Dashboard style 1</a></li>
-                            <li><a href="index2.html">Dashboard style 2</a></li>
-                        </ul>
+                      
                     </li>
                     
                     <li class="dropdown">
-                        <a href="javascript:;" class="dropdown-toggle">
+                        <a href="?p=gestion/fournisseurs/liste_fournisseurs" class="dropdown-toggle">
                             <span class="micon dw "><i class="icon-copy fa fa-drivers-license" aria-hidden="true"></i></span><span class="mtext">Patients</span>
                             
                         </a>
-                        <ul class="submenu">
-                            <li><a href="basic-table.html">Basic Tables</a></li>
-                            <li><a href="datatable.html">DataTables</a></li>
-                        </ul>
+                    
                     </li>
+
                     <li>
                         <a href="calendar.html" class="dropdown-toggle no-arrow">
                             <span class="micon dw dw-calendar1"></span><span class="mtext">RDVs</span>
@@ -53,7 +48,7 @@
                     </li>
                     <li class="dropdown">
                         <a href="javascript:;" class="dropdown-toggle">
-                            <span class="micon dw "><i class="fas fa-tooth"></i></span><span class="mtext">Médicaments</span>
+                            <span class="micon dw"><i class="fas fa-tooth"></i></span><span class="mtext">Médicaments</span>
                         </a>
                         <ul class="submenu">
                             <li><a href="font-awesome.html">FontAwesome Icons</a></li>

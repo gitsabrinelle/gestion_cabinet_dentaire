@@ -23,8 +23,9 @@
                     
                     <li class="dropdown">
                         <a href="javascript:;" class="dropdown-toggle">
-                            <span class="icon-copy fa fa-drivers-license" aria-hidden="true"></span><span class="mtext">Patients</span>
-                                                    </a>
+                            <span class="micon dw "><i class="icon-copy fa fa-drivers-license" aria-hidden="true"></i></span><span class="mtext">Patients</span>
+                            
+                        </a>
                         <ul class="submenu">
                             <li><a href="basic-table.html">Basic Tables</a></li>
                             <li><a href="datatable.html">DataTables</a></li>
@@ -38,7 +39,7 @@
                    
                     <li class="dropdown">
                         <a href="javascript:;" class="dropdown-toggle">
-                            <span class="micon dw dw-edit2"></span><span class="mtext">Actes dentaires</span>
+                            <span class="micon dw dw-invoice"></span><span class="mtext">Actes dentaires</span>
                         </a>
                         <ul class="submenu">
                             <li><a href="form-basic.html">Form Basic</a></li>
@@ -52,7 +53,7 @@
                     </li>
                     <li class="dropdown">
                         <a href="javascript:;" class="dropdown-toggle">
-                            <span class="micon dw dw-paint-brush"></span><span class="mtext">Médicaments</span>
+                            <span class="micon dw "><i class="fas fa-tooth"></i></span><span class="mtext">Médicaments</span>
                         </a>
                         <ul class="submenu">
                             <li><a href="font-awesome.html">FontAwesome Icons</a></li>

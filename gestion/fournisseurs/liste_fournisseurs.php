@@ -32,6 +32,10 @@
 
                     </div>
                     <div class="pb-20">
+                        <?php
+                        $sql = "SELECT * FROM `patient`";
+                        if ($result = mysqli_query($link, $sql)) {
+                        if (mysqli_num_rows($result) >= 0) { ?>
                         <table class="data-table table stripe hover nowrap">
                             <thead>
                                 <tr>
@@ -39,19 +43,22 @@
                                     <th>prénom</th>
                                     <th>Date de naissance </th>
                                     <th>n°Tel</th>
-                                    <th>Address</th>
-                                    
+                                    <th>Addresse</th>
                                 <th class="datatable-nosort">Action</th>
                                 </tr>
                             </thead>
                             <tbody>
+                            <?php
+                            while ($row = mysqli_fetch_array($result)) { ?>
                                 <tr>
-                                    <td>a</td>
-                                    <td>b</td>
-                                    <td>c</td>
-                                    <td>d</td>
-                                    <td>e</td>
-                                    <td>
+                                    <td><?php echo $row["nom"]?></td>
+                                    <td><?php echo $row["prenom"]?></td>
+                                    <td><?php echo $row["date_de_naissance"]?></td>
+                                    <td><?php echo $row["n_tel"]?></td>
+                                    <td><?php echo $row["email"]?></td>
+                                    <td><?php echo $row["adresse"]?></td>
+
+                                 <!--   <td>
                                         <div class="dropdown">
                                             <a class="btn btn-link font-24 p-0 line-height-1 no-arrow dropdown-toggle" href="#" role="button" data-toggle="dropdown">
                                                 <i class="dw dw-more"></i>
@@ -62,7 +69,7 @@
                                                 <a class="dropdown-item" href="#"><i class="dw dw-delete-3"></i> Delete</a>
                                             </div>
                                         </div>
-                                    </td>
+                                    </td> -->
                                 </tr>
                                
                                
@@ -71,5 +78,4 @@
                         </table>
                     </div>
                 </div>
-                <!-- Simple Datatable End -->
-                
+                <!-- Datatable End -->

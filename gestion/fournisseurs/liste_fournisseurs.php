@@ -44,7 +44,7 @@
                                     <th>Date de naissance </th>
                                     <th>n°Tel</th>
                                     <th>Addresse</th>
-                                <th class="datatable-nosort">Action</th>
+                                    <th  colspan="2">Action</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -55,8 +55,19 @@
                                     <td><?php echo $row["prenom"]?></td>
                                     <td><?php echo $row["date_de_naissance"]?></td>
                                     <td><?php echo $row["n_tel"]?></td>
-                                    <td><?php echo $row["email"]?></td>
-                                    <td><?php echo $row["adresse"]?></td>
+                                    <td><?php echo $row["addresse"]?></td>
+                                    <td>
+                                        <a href="?p=gestion/fournisseurs/edit_fournisseurs.php/<?php echo $row["id"]?>"
+                                           class="btn btn-default btn-sm btn-icon icon-left">
+                                            <i class="entypo-pencil"></i>Modifier
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="?p=gestion/fournisseurs/delete_fournisseurs.php/<?php echo $row["id"]?>"
+                                           class="btn btn-danger btn-sm btn-icon icon-left">
+                                            <i class="entypo-cancel"></i>Supprimer
+                                        </a>
+                                    </td>
 
                                  <!--   <td>
                                         <div class="dropdown">
@@ -77,5 +88,4 @@
                             </tbody>
                         </table>
                     </div>
-                </div>
-                <!-- Datatable End -->
+                </div> <?php }}} ?>

@@ -1,3 +1,5 @@
+
+<div class="main-container">
 <?php
 $ref='';
 
@@ -14,13 +16,16 @@ if(isset($_POST['submit']) ){
 
     /////////////////////////////////////
     $date_de_naissance= '';
+
     if(  isset($_POST['date_de_naissance'])  )
         $date_de_naissance= $_POST['date_de_naissance'];
-    $array = explode("/",$date_de_naissance);
+    $array = explode(" ",$date_de_naissance);
+    var_dump($array);
     $array[0];
     $array[1];
     $array[2];
-    $date_de_naissance = $array[0]."/".$array[1]."/".$array[2];
+    $date_de_naissance = $array[0]."/01/".$array[2];
+
 
     //$date_inscription = array(0)."-".array(1)."-".array(2);
     //var_dump($array[0]);die;
@@ -31,40 +36,29 @@ if(isset($_POST['submit']) ){
     if(  isset($_POST['n_tel'])  )
         $n_tel = $_POST['n_tel'];
 
-    $addresse = '';
-    if(  isset($_POST['addresse'])  )
-        $addresse = $_POST['addresse'];
+    $adresse = '';
+    if(  isset($_POST['adresse'])  )
+        $adresse = $_POST['adresse'];
 
 
 
-
-
-
-
-
-
-
+    echo ($n_tel);
 
     $query = "INSERT INTO  `patient` (
-                                                        `nom`
-                                                        ,`prenom`
-                                                        ,`date_de_naissance`
-                                                        ,`n_tel`
-                                                        ,`addresse`
-                                                       ,
+                                                        `nom`,
+                                                        `addresse`,
+                                                        `n_tel`,
+                                                        `prenom`
 														
 
 												) VALUES (
-												       
-                                                        '".$nom."'
-                                                        ,'.$prenom.'
-                                                        ,'".$date_de_naissance."'
-                                                        ,'".$n_tel."'
-                                                
-                                                        ,'".$adresse."'
+                                                        '".$nom."',
+                                                        '".$adresse."',
+                                                        '".$n_tel."',
+                                                        '".$prenom."'
                                                        
 														
-												)";
+												)"; var_dump($query);
 
     $request = mysqli_query($link,$query) or die(mysqli_error($link));
     if($request){?>
@@ -88,3 +82,5 @@ if(isset($_POST['submit']) ){
         <?php
     }
 }?>
+    </div>
+
